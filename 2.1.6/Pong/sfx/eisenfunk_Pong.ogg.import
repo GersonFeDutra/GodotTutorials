@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/eisenfunk_Pong.ogg-1dd5898032d753f78710f37a07371050.oggstr"
+
+[deps]
+
+source_file="res://Godot/Pong/sfx/eisenfunk_Pong.ogg"
+source_md5="b57c80e8514039b81aaf46b8f5a68ba6"
+
+dest_files=[ "res://.import/eisenfunk_Pong.ogg-1dd5898032d753f78710f37a07371050.oggstr" ]
+dest_md5="d3f387e597c6b76e904899667dcade6e"
+
+[params]
+
+loop=true
+loop_offset=0

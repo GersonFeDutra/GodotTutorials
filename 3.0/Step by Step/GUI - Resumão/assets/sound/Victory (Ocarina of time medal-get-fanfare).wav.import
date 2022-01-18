@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Victory (Ocarina of time medal-get-fanfare).wav-135c9020ba0bde93a0cfd39473b38ef5.sample"
+
+[deps]
+
+source_file="res://assets/sound/Victory (Ocarina of time medal-get-fanfare).wav"
+source_md5="06727ed57ce8933cbe107c59990a8ab5"
+
+dest_files=[ "res://.import/Victory (Ocarina of time medal-get-fanfare).wav-135c9020ba0bde93a0cfd39473b38ef5.sample" ]
+dest_md5="83bf40e5ed73e7a04ead005135335697"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Morphine - Loose Strings.wav-0f74e543689834add9669e981c7409c9.sample"
+
+[deps]
+
+source_file="res://assets/sound/Morphine - Loose Strings.wav"
+source_md5="b12bc5c40f810beacef873a6cc6d2a69"
+
+dest_files=[ "res://.import/Morphine - Loose Strings.wav-0f74e543689834add9669e981c7409c9.sample" ]
+dest_md5="02dc9d16459b5d3aa65035d9cb433cdb"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

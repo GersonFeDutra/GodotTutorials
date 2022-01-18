@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/AreYouReady_Martian.WAV-3b46a2f75fcc8338d4758784c5139bc0.sample"
+
+[deps]
+
+source_file="res://assets/sound/AreYouReady_Martian.WAV"
+source_md5="d730c306476cec2f79aaf9845db8e8e9"
+
+dest_files=[ "res://.import/AreYouReady_Martian.WAV-3b46a2f75fcc8338d4758784c5139bc0.sample" ]
+dest_md5="c9b79a21120274981ef90538fe28af4d"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/roof_floor_Impact.ogg-6115ba87119af80ebd58a9fd79287e68.oggstr"
+
+[deps]
+
+source_file="res://Godot/Pong/sfx/roof_floor_Impact.ogg"
+source_md5="695c6367a8999f61f69fda649e4a8866"
+
+dest_files=[ "res://.import/roof_floor_Impact.ogg-6115ba87119af80ebd58a9fd79287e68.oggstr" ]
+dest_md5="1401b8679b209476884aae6d058bd728"
+
+[params]
+
+loop=true
+loop_offset=0

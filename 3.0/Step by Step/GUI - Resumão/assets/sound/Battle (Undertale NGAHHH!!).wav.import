@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Battle (Undertale NGAHHH!!).wav-a7ae5c4c28325674bb7f5a9870b72bb5.sample"
+
+[deps]
+
+source_file="res://assets/sound/Battle (Undertale NGAHHH!!).wav"
+source_md5="ea2a84abde411fe1724ad9619b98e1df"
+
+dest_files=[ "res://.import/Battle (Undertale NGAHHH!!).wav-a7ae5c4c28325674bb7f5a9870b72bb5.sample" ]
+dest_md5="604b1b579fb59784dd9408c2afbd1633"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

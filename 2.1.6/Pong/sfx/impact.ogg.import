@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/impact.ogg-636b552feb684edf5d29f7217f04d362.oggstr"
+
+[deps]
+
+source_file="res://Godot/Pong/sfx/impact.ogg"
+source_md5="33daa24c6a213add6b3a12445c6bd621"
+
+dest_files=[ "res://.import/impact.ogg-636b552feb684edf5d29f7217f04d362.oggstr" ]
+dest_md5="a33d7ac834da75d9ccc1097d8b05b528"
+
+[params]
+
+loop=true
+loop_offset=0

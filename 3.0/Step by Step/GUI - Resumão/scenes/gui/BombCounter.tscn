@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/gui/Counter.tscn" type="PackedScene" id=1]
+
+[node name="BombCounter" index="0" instance=ExtResource( 1 )]
+
+margin_right = -1246.0
+
+[node name="Background" parent="." index="0"]
+
+margin_right = 120.0
+
+

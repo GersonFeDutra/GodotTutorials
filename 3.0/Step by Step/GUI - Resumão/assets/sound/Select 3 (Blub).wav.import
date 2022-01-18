@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Select 3 (Blub).wav-c5654debdcdabd9c88ad8a79fb882f9e.sample"
+
+[deps]
+
+source_file="res://assets/sound/Select 3 (Blub).wav"
+source_md5="e37f145ad34315999f4fd14304cd844d"
+
+dest_files=[ "res://.import/Select 3 (Blub).wav-c5654debdcdabd9c88ad8a79fb882f9e.sample" ]
+dest_md5="8cb6bafd5b8789a7bfdfc5fd3913dc3c"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

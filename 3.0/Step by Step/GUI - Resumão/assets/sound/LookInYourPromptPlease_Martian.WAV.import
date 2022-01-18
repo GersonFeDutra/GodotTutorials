@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/LookInYourPromptPlease_Martian.WAV-1a6a55feb338ebe74243ecfaffaa4712.sample"
+
+[deps]
+
+source_file="res://assets/sound/LookInYourPromptPlease_Martian.WAV"
+source_md5="d3d9e3d980d7fd5d7071d058b7b81ab2"
+
+dest_files=[ "res://.import/LookInYourPromptPlease_Martian.WAV-1a6a55feb338ebe74243ecfaffaa4712.sample" ]
+dest_md5="ced8c101c2894dac9a330830766e9820"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

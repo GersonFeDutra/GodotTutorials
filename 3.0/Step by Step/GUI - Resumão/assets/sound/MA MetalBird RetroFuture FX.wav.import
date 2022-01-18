@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MA MetalBird RetroFuture FX.wav-3109a8fe3e310dc60a0b9ab43f6d4b8c.sample"
+
+[deps]
+
+source_file="res://assets/sound/MA MetalBird RetroFuture FX.wav"
+source_md5="8b1ef7243c05d4f7f4c281f97324c093"
+
+dest_files=[ "res://.import/MA MetalBird RetroFuture FX.wav-3109a8fe3e310dc60a0b9ab43f6d4b8c.sample" ]
+dest_md5="87803a46db5f9d16c02fb7c59e8b8126"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

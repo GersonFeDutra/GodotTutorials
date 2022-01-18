@@ -1,0 +1,165 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-8.png" type="Texture" id=1]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-3.png" type="Texture" id=2]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-7.png" type="Texture" id=3]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-2.png" type="Texture" id=4]
+[ext_resource path="res://exercises/2d_sprite_animation/2d_animation_player-run.png" type="Texture" id=5]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-6.png" type="Texture" id=6]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-1.png" type="Texture" id=7]
+[ext_resource path="res://exercises/2d_sprite_animation/2d_animation_frog_spritesheet.png" type="Texture" id=8]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-4.png" type="Texture" id=9]
+[ext_resource path="res://exercises/2d_sprite_animation/run_animation/run-5.png" type="Texture" id=10]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends KinematicBody2D
+
+onready var animated_sprite: AnimatedSprite = $AnimatedSprite
+
+
+func _process(delta: float) -> void:
+	
+	if Input.is_action_pressed(\"ui_right\"):
+		animated_sprite.play(\"run\")
+	else:
+		animated_sprite.stop()
+"
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+} ]
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 0, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 64, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 128, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 192, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 8 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "idle",
+"speed": 4.0
+}, {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[sub_resource type="GDScript" id=12]
+script/source = "extends KinematicBody2D
+
+onready var _animation_player: AnimationPlayer = $AnimationPlayer
+
+
+func _process(delta: float) -> void:
+	
+	if Input.is_action_pressed(\"ui_right\"):
+		_animation_player.play(\"walk\")
+	else:
+		_animation_player.stop()
+"
+
+[sub_resource type="Animation" id=13]
+resource_name = "walk"
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+
+[node name="2DSpriteAnimation" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 186.821, 122.595 )
+script = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 2 )
+animation = "run"
+frame = 2
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 0, 9.7818 )
+
+[node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D2"]
+position = Vector2( 416, 160 )
+frames = SubResource( 11 )
+animation = "jump"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D2"]
+
+[node name="KinematicBody2D3" type="KinematicBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D3"]
+
+[node name="KinematicBody2D4" type="KinematicBody2D" parent="."]
+script = SubResource( 12 )
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D4"]
+position = Vector2( 288, 156.095 )
+texture = ExtResource( 5 )
+hframes = 6
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D4"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="KinematicBody2D4"]
+autoplay = "walk"
+anims/walk = SubResource( 13 )

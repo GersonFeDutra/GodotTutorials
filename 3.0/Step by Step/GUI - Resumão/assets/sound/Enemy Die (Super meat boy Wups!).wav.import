@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Enemy Die (Super meat boy Wups!).wav-aa5ebbed358399e7bfcc1036ea598303.sample"
+
+[deps]
+
+source_file="res://assets/sound/Enemy Die (Super meat boy Wups!).wav"
+source_md5="91acdafb8b63e89bae34ec0d3719a1a0"
+
+dest_files=[ "res://.import/Enemy Die (Super meat boy Wups!).wav-aa5ebbed358399e7bfcc1036ea598303.sample" ]
+dest_md5="55dd46fbe58dbbb99644e906f90efd65"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
